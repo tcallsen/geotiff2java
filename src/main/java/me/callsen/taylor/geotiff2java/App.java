@@ -18,7 +18,7 @@ public class App {
     // based on: http://www.smartjava.org/content/access-information-geotiff-using-java/
 
     // load tiff file to memory
-    File tiffFile = new File("/root/taylor/Documents/dev/geotiff2java/data/USGS_13_n38w123_uncomp.tif");
+    File tiffFile = new File("/development/workspace/USGS_13_n38w123_uncomp.tif");
     GeoTiffReader reader = new GeoTiffReader(tiffFile);
     GridCoverage2D cov = reader.read(null);
     Raster tiffRaster = cov.getRenderedImage().getData();
