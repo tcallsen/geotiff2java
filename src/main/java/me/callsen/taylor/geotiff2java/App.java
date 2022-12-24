@@ -24,11 +24,11 @@ public class App {
     Raster tiffRaster = cov.getRenderedImage().getData();
 
     // convert lat/lon gps coordinates to tiff x/y coordinates
-    CoordinateReferenceSystem wgs84 = DefaultGeographicCRS.WGS84;
-    GridGeometry2D gg = cov.getGridGeometry();
     double lat = 37.75497;
     double lon = -122.44580;
-    DirectPosition2D posWorld = new DirectPosition2D(wgs84, lon, lat); // longitute supplied first
+    CoordinateReferenceSystem wgs84 = DefaultGeographicCRS.WGS84;
+    GridGeometry2D gg = cov.getGridGeometry();
+    DirectPosition2D posWorld = new DirectPosition2D(wgs84, lon, lat); // longitude supplied first
     GridCoordinates2D posGrid = gg.worldToGrid(posWorld);
 
     // sample tiff data with at pixel coordinate

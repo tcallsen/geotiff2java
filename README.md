@@ -53,3 +53,7 @@ TiffImageParser readerT = new TiffImageParser();
 BufferedImage image = readerT.getBufferedImage(tiffFile, params);
 Raster tiffRaster = image.getData();
 ```
+
+## Blog Post
+
+A blog post that discusses this project in more detail is available here: [https://taylor.callsen.me/parsing-geotiff-files-in-java/](https://taylor.callsen.me/parsing-geotiff-files-in-java/)
